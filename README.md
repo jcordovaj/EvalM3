@@ -35,7 +35,7 @@
 
 ```python
 # Aquí pegarías el código Python formateado con Markdown
-
+```
 ### Diccionario de objetos
 
 Elemento

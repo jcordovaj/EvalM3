@@ -1,7 +1,8 @@
-# Entrega Final Módulo 3 Bootcamp Full Stack Python
+# ENTREGA FINAL MÓDULO 3 BOOTCAMP FULL STACK PYTHON
 
-## Sistema Harry Potter: El único Gran Mago
- Ejericicio para clasificación de Personajes
+## Sistema Harry Potter es el único Gran Mago
+  Ejericicio para clasificación de Personajes
+
 
 ### Descripción del proyecto
 

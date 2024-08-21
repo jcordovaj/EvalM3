@@ -89,8 +89,11 @@
       3) Se trata de mantener coherencia con PEP8      
 
 Author             : Jota Cordova (jotacordovaj.io@gmail.com)
+
 Fecha de creación  : 16/08/2024
+
 Última modificación: 21/08/2024
+
 Versión            : 3.0.0
 
 **Historial de versiones**

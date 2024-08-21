@@ -39,8 +39,7 @@ Descripción:
             lst_ : Para listas
             v_   : Para variables
             dict_: Para diccionarios
-        2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera palabra en minúscula y 
-                     la segunda con la primera letra en mayúscula, ejemplo: "unEjemplo"        
+        2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera palabra en minúscula y la segunda con la primera letra en mayúscula, ejemplo: "unEjemplo".        
     - Consideraciones especiales:
         1) Cada función incluye docstrings, con indicación de:
             a) Su Propósito o qué hace.

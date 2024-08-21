@@ -3,7 +3,6 @@
 ## Sistema Harry Potter es el único Gran Mago
   Ejericicio para clasificación de Personajes
 
-
 ### Descripción del proyecto
 
 * **Objetivo:** Clasificar y manipular una lista de personajes.
@@ -32,11 +31,12 @@
 * **2.0.1 (19/08/2024):** Corrige opciones del menú.
 * **3.0.0 (20/08/2024):** Agrega ingesta de datos desde un archivo externo.
 
-### Código
+### Código (PENDIENTE)
 
 ```python
-# Aquí pegarías el código Python formateado con Markdown
+# Pendiente, agregar código Python formateado con Markdown
 ```
+
 ### Diccionario de objetos
 
 | Elemento | Tipo | Descripción |

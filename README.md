@@ -7,7 +7,7 @@
 
 * **Objetivo:** Clasificar y manipular una lista de personajes.
 * **Funcionalidades:**
-    1) Lee un archivo externo en formato txt.
+    1 Lee un archivo externo en formato txt.
     2) Convierte los datos a un diccionario.
     3) Convierte el diccionario en 3 listas, según su valor.
     4) Agrega prefijo "El gran Mago" a personajes de lista "Magos"

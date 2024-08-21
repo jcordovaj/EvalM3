@@ -98,9 +98,12 @@ Versión            : 3.0.0
 
 **Historial de versiones**
     1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario se encuentra embebido
-                        viene en el código y muestra todo sin control, cumple el objetivo básico. 
+                        viene en el código y muestra todo sin control, cumple el objetivo básico.
+                        
     2.0.0 (18/08/2024): Agrega menú y algunas interacciones.
+    
     2.0.1 (19/08/2024): Corrige opciones del menú.
+    
     3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo externo.
 
 **Próximo release:**    

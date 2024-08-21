@@ -78,14 +78,18 @@
 
 **Consideraciones adicionales:**
     Guía de estilos y nomenclatura:
+    
       1) Para una mejor identificación, se han agregado prefijos a los objetos:
+      
           f_   : Para funciones
           lst_ : Para listas
           v_   : Para variables
           dict_: Para diccionarios
+          
       2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera 
                    palabra en minúscula y la segunda con la primera letra en mayúscula, 
                    ejemplo: "unEjemplo"
+                   
       3) Se trata de mantener coherencia con PEP8      
 
 Author             : Jota Cordova (jotacordovaj.io@gmail.com)

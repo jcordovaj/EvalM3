@@ -108,4 +108,5 @@ Versión            : 3.0.0
     3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo externo.
 
 **Próximo release:**    
+    
     4.0.0 (30/08/2024): Agregar un nuevo personaje modificando el archivo de texto.

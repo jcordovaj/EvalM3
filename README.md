@@ -7,7 +7,7 @@
 
 * **Objetivo:** Clasificar y manipular una lista de personajes.
 * **Funcionalidades:**
-    1 Lee un archivo externo en formato txt.
+    1) Lee un archivo externo en formato txt.
     2) Convierte los datos a un diccionario.
     3) Convierte el diccionario en 3 listas, según su valor.
     4) Agrega prefijo "El gran Mago" a personajes de lista "Magos"
@@ -16,12 +16,15 @@
     7) Genera lista con todos los personajes, incluyendo los modificados con su prefijo
     8) (Pendiente próxima versión) Agrega un nuevo personaje al archivo txt, en formato clave:valor (nombre:clasificación)
 * **Dependencias externas:**
-        1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.       
+      1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.       
 * **Tecnologías:**
-    * Python 3.12.15
-    * Tabulate 0.9.0  
+    * Python==3.12.15
+    * Tabulate==0.9.0  
 * **Estructura del código:**
-    * Funciones documentadas con con docstrings.
+    * Cada función incluye docstrings, con indicación de:
+      a) Su Propósito o qué hace.
+      b) Parámetros que recibe.
+      c) Lo qué retorna.
     
 ### Detalles técnicos
 
@@ -40,7 +43,7 @@
 ### Código (PENDIENTE)
 
 ```python
-# Pendiente, agregar código Python formateado con Markdown
+# Pendiente, agregar código Python en formato MD
 ```
 
 ### Diccionario de objetos
@@ -85,4 +88,17 @@
                    ejemplo: "unEjemplo"
       3) Se trata de mantener coherencia con PEP8      
 
+Author             : Jota Cordova (jotacordovaj.io@gmail.com)
+Fecha de creación  : 16/08/2024
+Última modificación: 21/08/2024
+Versión            : 3.0.0
 
+**Historial de versiones**
+    1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario se encuentra embebido
+                        viene en el código y muestra todo sin control, cumple el objetivo básico. 
+    2.0.0 (18/08/2024): Agrega menú y algunas interacciones.
+    2.0.1 (19/08/2024): Corrige opciones del menú.
+    3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo externo.
+
+**Próximo release:**    
+    4.0.0 (30/08/2024): Agregar un nuevo personaje modificando el archivo de texto.

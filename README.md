@@ -97,6 +97,7 @@ Fecha de creación  : 16/08/2024
 Versión            : 3.0.0
 
 **Historial de versiones**
+   
     1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario se encuentra embebido
                         viene en el código y muestra todo sin control, cumple el objetivo básico.
                         

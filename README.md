@@ -16,7 +16,9 @@
     7) Genera lista con todos los personajes, incluyendo los modificados con su prefijo
     8) (Pendiente próxima versión) Agrega un nuevo personaje al archivo txt, en formato clave:valor (nombre:clasificación)
 * **Dependencias externas:**
-      1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.       
+  
+      1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.
+       
 * **Tecnologías:**
     * Python==3.12.15
     * Tabulate==0.9.0  

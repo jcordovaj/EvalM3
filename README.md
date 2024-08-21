@@ -1,26 +1,32 @@
 # ENTREGA FINAL MÓDULO 3 BOOTCAMP FULL STACK PYTHON
 
 ## Sistema Harry Potter es el único Gran Mago
-  Ejericicio para clasificación de Personajes
+  Ejercicio para clasificación de Personajes
 
 ### Descripción del proyecto
 
 * **Objetivo:** Clasificar y manipular una lista de personajes.
 * **Funcionalidades:**
-    * Lectura de archivo externo.
-    * Creación de diccionario.
-    * Clasificación de personajes.
-    * Modificación de nombres de magos.
-    * Generación de reportes o listados.
-* **Tecnologías:** Python, Tabulate, OS
+    1) Lee un archivo externo en formato txt.
+    2) Convierte los datos a un diccionario.
+    3) Convierte el diccionario en 3 listas, según su valor.
+    4) Agrega prefijo "El gran Mago" a personajes de lista "Magos"
+    5) Genera lista con todos los personajes antes de ser modificados.
+    6) Genera la lista de los "Magos" modificada con el prefijo "El gran mago"
+    7) Genera lista con todos los personajes, incluyendo los modificados con su prefijo
+    8) (Pendiente próxima versión) Agrega un nuevo personaje al archivo txt, en formato clave:valor (nombre:clasificación)
+* **Dependencias externas:**
+        1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.       
+* **Tecnologías:**
+    * Python 3.12.15
+    * Tabulate 0.9.0  
 * **Estructura del código:**
-    * Uso de funciones con docstrings.
-    * Nomenclatura clara y consistente.
-
+    * Funciones documentadas con con docstrings.
+    
 ### Detalles técnicos
 
 * **Estructura de datos:** Diccionario para almacenar personajes.
-* **Algoritmos:** Clasificación simple basada en valores de diccionario.
+* **Algoritmos:** Clasificación ordenamiento y búsqueda de valores utilizando los métodos de la clase diccionario y listas.
 * **Librerías:**
     * **Tabulate:** Para formatear tablas de salida.
     * **OS:** Para interactuar con el sistema operativo (limpiar pantalla).
@@ -65,13 +71,18 @@
 
 -   **Elemento:** Nombre de la variable o función.
 -   **Tipo:** Tipo de dato (str, int, float, list, dict, function, etc.).
--   **Descripción:** Explicación concisa de qué hace o almacena el elemento.
+-   **Descripción:** Qué hace o almacena el objeto.
 
 **Consideraciones adicionales:**
-
--   **Completitud:** Asegúrate de incluir todas las variables y funciones relevantes.
--   **Claridad:** Usa un lenguaje claro y conciso para describir cada elemento.
--   **Consistencia:** Mantén una estructura y formato consistente en todo el diccionario.
--   **Actualización:** Mantén el diccionario actualizado a
+    Guía de estilos y nomenclatura:
+      1) Para una mejor identificación, se han agregado prefijos a los objetos:
+          f_   : Para funciones
+          lst_ : Para listas
+          v_   : Para variables
+          dict_: Para diccionarios
+      2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera 
+                   palabra en minúscula y la segunda con la primera letra en mayúscula, 
+                   ejemplo: "unEjemplo"
+      3) Se trata de mantener coherencia con PEP8      
 
 

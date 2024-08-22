@@ -26,7 +26,9 @@
     * Cada función incluye docstrings, con indicación de:
       
       a) Su Propósito o qué hace.
+      
       b) Parámetros que recibe.
+
       c) Lo qué retorna.
     
 ### Detalles técnicos

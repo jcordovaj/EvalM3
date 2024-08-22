@@ -24,6 +24,7 @@
     * Tabulate==0.9.0  
 * **Estructura del código:**
     * Cada función incluye docstrings, con indicación de:
+      
       a) Su Propósito o qué hace.
       b) Parámetros que recibe.
       c) Lo qué retorna.

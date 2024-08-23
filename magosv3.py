@@ -24,22 +24,47 @@ Descripción:
     - Dependencias externas:
         1) Archivo externo "personajes.txt", permite escalabilidad al proyecto.
     - Diccionario de funciones:
-        1) Fx 1
-        2) Fx 2
-        3) Fx 3
-        4) Fx 4
-        5) Fx 1
-        6) Fx 2 
-    - Librerías utilizadas:
-        1) Tabulate, permite mostrar datos tabulados y agregar formateos personalizados
-        2) OS, permite acceder a comandos del S.O, por ejemplo, para limpiar la pantalla
+       Diccionario de objetos
+        Elemento	                Tipo        	Descripción
+        ************************************************************************************************************
+        Variables		
+        *********
+        v_nomArchivo	            str	        Nombre del archivo de texto a leer.
+        dict_personajes	            dict    	Diccionario que almacena los personajes y sus clasificaciones.
+        lst_magos	                list    	Lista de nombres de los magos.
+        lst_cientificos	            list    	Lista de nombres de los científicos.
+        lst_otros	                list    	Lista de nombres de otros personajes.
+        lst_grandiosos	            list    	Lista de nombres de magos con el prefijo "El gran".
+        v_limpiarPantalla	        bool    	Flag para controlar si se limpia la pantalla.
+        v_cont	                    str	        Variable para almacenar la respuesta del usuario si desea continuar.
+        Funciones		
+        *********
+        f_limpiarPantalla()     	function	Limpia la pantalla de la consola.
+        f_leerArchivo()	            function	Lee un archivo de texto y crea un diccionario.
+        f_clasificarPersonajes()    function	Clasifica los personajes en diferentes categorías.
+        f_hacerGrandioso()	        function	Agrega el prefijo "El gran" a los nombres de los magos.
+        f_imprimirNombres()	        function	Imprime los nombres de una lista.
+        f_imprimirTodos()	        function	Imprime todos los personajes con su clasificación.
+        f_imprimirMagos()	        function	Imprime solo los nombres de los magos.
+        f_imprimirGrandiosos()	    function	Imprime los nombres de los magos con el prefijo.
+        f_imprimirFinal()   	    function	Imprime todos los personajes después de agregar el prefijo.
+
+        Explicación de las columnas:
+
+        Elemento: Nombre de la variable o función.
+        Tipo: Tipo de dato (str, int, float, list, dict, function, etc.).
+        Descripción: Qué hace o almacena el objeto.
+            - Librerías utilizadas:
+                1) Tabulate, permite mostrar datos tabulados y agregar formateos personalizados
+                2) OS, permite acceder a comandos del S.O, por ejemplo, para limpiar la pantalla
     - Guía de estilos y nomenclatura:
         1) Para una mejor identificación, se han agregado prefijos a los objetos:
             f_   : Para funciones
             lst_ : Para listas
             v_   : Para variables
             dict_: Para diccionarios
-        2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera palabra en minúscula y la segunda con la primera letra en mayúscula, ejemplo: "unEjemplo".        
+        2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera palabra 
+        en minúscula y la segunda con la primera letra en mayúscula, ejemplo: "unEjemplo".        
     - Consideraciones especiales:
         1) Cada función incluye docstrings, con indicación de:
             a) Su Propósito o qué hace.

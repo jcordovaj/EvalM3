@@ -236,21 +236,29 @@ while True:
     opcion = int(input("Ingrese una opción: "))
     if opcion == 1:
         print('\033[H\033[J', end='')  # Código de escape "ANSI" para forzar el limpiar la pantalla
+        f_limpiarPantalla()
+        print("")
         print("La lista completa de personajes es: ")
         print(34*"=")
         f_imprimirTodos(lst_magos, lst_cientificos, lst_otros)
     elif opcion == 2:
         print('\033[H\033[J', end='')
+        f_limpiarPantalla()
+        print("")
         print("La lista de magos sin modificar es: ")
         print(34*"=")
         f_imprimirMagos(lst_magos)
     elif opcion == 3:
         print('\033[H\033[J', end='')
+        f_limpiarPantalla()
+        print("")
         print("La lista de magos modificada es: ")
         print(31*"=")
         f_imprimirGrandiosos(lst_grandiosos)
     elif opcion == 4:
         print('\033[H\033[J', end='')
+        f_limpiarPantalla()
+        print("")
         print("Los personajes agrupados por clasificación son: ")
         print(47*"=")
         f_imprimirFinal(lst_grandiosos, lst_cientificos, lst_otros)
@@ -258,6 +266,7 @@ while True:
         break
     else:
         print('\033[H\033[J', end='')
+        f_limpiarPantalla()
         print("")
         print("Opción inválida")
     

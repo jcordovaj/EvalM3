@@ -235,28 +235,28 @@ while True:
     print("5. Salir")
     opcion = int(input("Ingrese una opción: "))
     if opcion == 1:
-        print('\033[H\033[J', end='')  # Código de escape "ANSI" para forzar el limpiar la pantalla
+        #print('\033[H\033[J', end='')  # Código de escape "ANSI" para forzar el limpiar la pantalla
         f_limpiarPantalla()
         print("")
         print("La lista completa de personajes es: ")
         print(34*"=")
         f_imprimirTodos(lst_magos, lst_cientificos, lst_otros)
     elif opcion == 2:
-        print('\033[H\033[J', end='')
+        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("La lista de magos sin modificar es: ")
         print(34*"=")
         f_imprimirMagos(lst_magos)
     elif opcion == 3:
-        print('\033[H\033[J', end='')
+        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("La lista de magos modificada es: ")
         print(31*"=")
         f_imprimirGrandiosos(lst_grandiosos)
     elif opcion == 4:
-        print('\033[H\033[J', end='')
+        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("Los personajes agrupados por clasificación son: ")
@@ -265,14 +265,14 @@ while True:
     elif opcion == 5:
         break
     else:
-        print('\033[H\033[J', end='')
+        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("Opción inválida")
     
     v_cont = input("¿Desea continuar? (s/n): ")
     if (v_cont.lower() == 's'):
-        print('\033[H\033[J', end='')  
+        #print('\033[H\033[J', end='')  
         v_limpiarPantalla = True       #v_cont.lower() == 's'  # Actualiza el flag
     else:
         v_limpiarPantalla = False

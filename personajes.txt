@@ -1,0 +1,10 @@
+nombre_personaje,clasificacion
+Harry Houdini,Mago
+Newton,Científico
+David Blaine,Mago
+Hawking,Científico
+Messi,Otro
+Teller,Mago
+Einstein,Científico
+Pele,Otro
+Juanes,Otro

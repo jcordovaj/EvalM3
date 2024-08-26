@@ -132,6 +132,15 @@ lst_magos, lst_cientificos, lst_otros = f_clasificar_personajes(dict_personajes)
 lst_grandiosos                        = f_hacer_grandioso(lst_magos)
     
 def f_menu():
+    """
+    Genera el menú con las opciones del 1 al 7 y
+    controla su ejecución
+    
+    Parámetros: Un número del 1 al 7
+    
+    Retorna: La opción escogida, y pregunta si desea continuar
+    si la respuesta es positiva, retornará al menú, en su defecto sale.
+    """
     while True:
         f_limpiar_pantalla()
         print("Menú:")

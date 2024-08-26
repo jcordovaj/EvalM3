@@ -263,7 +263,7 @@ while True:
     
     v_cont = input("¿Desea continuar? (s/n): ")
     if (v_cont.lower() == 's'):
-        print('\033[H\033[J', end='')  # ANSI escape code para limpiar la pantalla
-        v_limpiarPantalla = True #v_cont.lower() == 's'  # Actualizar el flag
+        print('\033[H\033[J', end='')  
+        v_limpiarPantalla = True       #v_cont.lower() == 's'  # Actualiza el flag
     else:
         v_limpiarPantalla = False

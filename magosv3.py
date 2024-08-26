@@ -111,7 +111,7 @@ def f_leerArchivo(v_nomArchivo):
     Retorna: Un diccionario con los elementos del archivo
     """
     dict_personajes = {}
-    with open(v_nomArchivo, 'r') as v_archivo:
+    with open(v_nomArchivo, 'r', encoding='utf-8') as v_archivo:
         # Forzamos que salte la primera línea para omitir los encabezados
         next(v_archivo)
         for v_linea in v_archivo:

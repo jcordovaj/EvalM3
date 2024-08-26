@@ -1,0 +1,5 @@
+|-- magosv3.1.py
+|-- magosv3.py
+|-- personajes.csv
+|-- personajes.txt
+|-- README.md

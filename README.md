@@ -65,15 +65,18 @@
 | v_limpiarPantalla | bool | Flag para controlar si se limpia la pantalla. |
 | v_cont | str | Variable para almacenar la respuesta del usuario si desea continuar. |
 | Funciones |  |  |
-| f_limpiarPantalla() | function | Limpia la pantalla de la consola. |
-| f_leerArchivo() | function | Lee un archivo de texto y crea un diccionario. |
-| f_clasificarPersonajes() | function | Clasifica los personajes en diferentes categorías. |
-| f_hacerGrandioso() | function | Agrega el prefijo "El gran" a los nombres de los magos. |
-| f_imprimirNombres() | function | Imprime los nombres de una lista. |
-| f_imprimirTodos() | function | Imprime todos los personajes con su clasificación. |
-| f_imprimirMagos() | function | Imprime solo los nombres de los magos. |
-| f_imprimirGrandiosos() | function | Imprime los nombres de los magos con el prefijo. |
-| f_imprimirFinal() | function | Imprime todos los personajes después de agregar el prefijo. |
+| f_limpiarPantalla()/f_limpiar_pantalla() | function | Limpia la pantalla de la consola. |
+| f_leerArchivo()/f_leer_archivo() | function | Lee un archivo de texto y crea un diccionario. |
+| f_clasificarPersonajes()/f_clasificar_personajes() | function | Clasifica los personajes en diferentes categorías. |
+| f_hacerGrandioso()/f_hacer_grandioso() | function | Agrega el prefijo "El gran" a los nombres de los magos. |
+| f_imprimirNombres()/f_imprimir_nombres() | function | Imprime los nombres de una lista. |
+| f_imprimirTodos()/f_imprimir_todos() | function | Imprime todos los personajes con su clasificación. |
+| f_imprimirMagos()/f_imprimir_magos() | function | Imprime solo los nombres de los magos. |
+| f_imprimirGrandiosos()/f_imprimir_grandiosos() | function | Imprime los nombres de los magos con el prefijo. |
+| f_imprimirFinal()/f_imprimir_lista_final() | function | Imprime todos los personajes después de agregar el prefijo. |
+| f_menu() | function | Muestra el menú |
+
+Nota: En la versión 3.1, se cambió la notación de las funciones, coherente con "snake_case" Python.
 
 **Explicación de las columnas:**
 
@@ -114,7 +117,9 @@ Versión            : 3.0.0
     
     2.0.1 (19/08/2024): Corrige opciones del menú.
     
-    3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo externo.
+    3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo CSV externo.
+
+    3.1.0 (26/08/2024): Agrega una versión con más opciones y lectura desde archivo TXT.
 
 **Próximo release:**    
     

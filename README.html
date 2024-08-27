@@ -1,0 +1,220 @@
+
+		<head>
+			<style type="text/css" media="screen">
+				body,html{font-family:var(--markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif);font-size:var(--markdown-font-size,14px);padding:0 26px;line-height:var(--markdown-line-height,22px);word-wrap:break-word}body{padding-top:1em}h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}h2,h3,h4,h5,h6{font-weight:400;margin-bottom:.2em}img{max-width:100%;max-height:100%}a{text-decoration:none}a:hover{text-decoration:underline}a:focus,input:focus,select:focus,textarea:focus{outline:1px solid -webkit-focus-ring-color;outline-offset:-1px}p{margin-bottom:.7em}ol,ul{margin-bottom:.7em}hr{border:0;height:2px;border-bottom:2px solid}h1{padding-bottom:.3em;line-height:1.2;border-bottom-width:1px;border-bottom-style:solid;font-weight:400}table{border-collapse:collapse}th{text-align:left;border-bottom:1px solid}td,th{padding:5px 10px}table>tbody>tr+tr>td{border-top:1px solid}blockquote{margin:0 7px 0 5px;padding:0 16px 0 10px;border-left-width:5px;border-left-style:solid}code{font-family:var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);font-size:1em;line-height:1.357em}body.wordWrap pre{white-space:pre-wrap}pre.hljs code>div,pre:not(.hljs){padding:16px;border-radius:3px;overflow:auto}pre code{color:var(--vscode-editor-foreground);tab-size:4}
+			</style>
+		</head>
+		<body>
+			<h1 id="entrega-final-módulo-3-bootcamp-full-stack-python">ENTREGA FINAL MÓDULO 3 BOOTCAMP FULL STACK PYTHON</h1>
+<h2 id="sistema-harry-potter-es-el-único-gran-mago">Sistema Harry Potter es el único Gran Mago</h2>
+<p>  Ejercicio para clasificación de Personajes</p>
+<h3 id="descripción-del-proyecto">Descripción del proyecto</h3>
+<ul>
+<li><p><strong>Objetivo:</strong> Clasificar y manipular una lista de personajes.</p>
+</li>
+<li><p><strong>Funcionalidades:</strong></p>
+<ol>
+<li>Lee un archivo externo en formato txt.</li>
+<li>Convierte los datos a un diccionario.</li>
+<li>Convierte el diccionario en 3 listas, según su valor.</li>
+<li>Agrega prefijo &quot;El gran Mago&quot; a personajes de lista &quot;Magos&quot;</li>
+<li>Genera lista con todos los personajes antes de ser modificados.</li>
+<li>Genera la lista de los &quot;Magos&quot; modificada con el prefijo &quot;El gran mago&quot;</li>
+<li>Genera lista con todos los personajes, incluyendo los modificados con su prefijo</li>
+<li>(Pendiente próxima versión) Agrega un nuevo personaje al archivo txt, en formato clave:valor (nombre:clasificación)</li>
+</ol>
+</li>
+<li><p><strong>Dependencias externas:</strong></p>
+<pre><code>1) Archivo externo: &quot;personajes.txt&quot;, permite escalabilidad al proyecto.
+ 
+</code></pre>
+</li>
+<li><p><strong>Tecnologías:</strong></p>
+<ul>
+<li>Python==3.12.15</li>
+<li>Tabulate==0.9.0  </li>
+</ul>
+</li>
+<li><p><strong>Estructura del código:</strong></p>
+<ul>
+<li><p>Cada función incluye docstrings, con indicación de:</p>
+<p>a) Su Propósito o qué hace.</p>
+<p>b) Parámetros que recibe.</p>
+<p>c) Lo qué retorna.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="detalles-técnicos">Detalles técnicos</h3>
+<ul>
+<li><strong>Estructura de datos:</strong> Diccionario para almacenar personajes.</li>
+<li><strong>Algoritmos:</strong> Clasificación ordenamiento y búsqueda de valores utilizando los métodos de la clase diccionario y listas.</li>
+<li><strong>Librerías:</strong><ul>
+<li><strong>Tabulate:</strong> Para formatear tablas de salida.</li>
+<li><strong>OS:</strong> Para interactuar con el sistema operativo (limpiar pantalla).</li>
+</ul>
+</li>
+</ul>
+<h3 id="historial-de-versiones">Historial de versiones</h3>
+<ul>
+<li><strong>1.0.0 (16/08/2024):</strong> Versión inicial.</li>
+<li><strong>2.0.0 (18/08/2024):</strong> Agrega menú.</li>
+<li><strong>2.0.1 (19/08/2024):</strong> Corrige opciones del menú.</li>
+<li><strong>3.0.0 (20/08/2024):</strong> Agrega ingesta de datos desde un archivo externo.</li>
+</ul>
+<h3 id="código-pendiente">Código (PENDIENTE)</h3>
+<pre><code class="language-python"># Pendiente, agregar código Python en formato MD
+</code></pre>
+<h3 id="diccionario-de-objetos">Diccionario de objetos</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Variables</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>v_nomArchivo</td>
+<td>str</td>
+<td>Nombre del archivo de texto a leer.</td>
+</tr>
+<tr>
+<td>dict_personajes</td>
+<td>dict</td>
+<td>Diccionario que almacena los personajes y sus clasificaciones.</td>
+</tr>
+<tr>
+<td>lst_magos</td>
+<td>list</td>
+<td>Lista de nombres de los magos.</td>
+</tr>
+<tr>
+<td>lst_cientificos</td>
+<td>list</td>
+<td>Lista de nombres de los científicos.</td>
+</tr>
+<tr>
+<td>lst_otros</td>
+<td>list</td>
+<td>Lista de nombres de otros personajes.</td>
+</tr>
+<tr>
+<td>lst_grandiosos</td>
+<td>list</td>
+<td>Lista de nombres de magos con el prefijo &quot;El gran&quot;.</td>
+</tr>
+<tr>
+<td>v_limpiarPantalla</td>
+<td>bool</td>
+<td>Flag para controlar si se limpia la pantalla.</td>
+</tr>
+<tr>
+<td>v_cont</td>
+<td>str</td>
+<td>Variable para almacenar la respuesta del usuario si desea continuar.</td>
+</tr>
+<tr>
+<td>Funciones</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>f_limpiarPantalla()/f_limpiar_pantalla()</td>
+<td>function</td>
+<td>Limpia la pantalla de la consola.</td>
+</tr>
+<tr>
+<td>f_leerArchivo()/f_leer_archivo()</td>
+<td>function</td>
+<td>Lee un archivo de texto y crea un diccionario.</td>
+</tr>
+<tr>
+<td>f_clasificarPersonajes()/f_clasificar_personajes()</td>
+<td>function</td>
+<td>Clasifica los personajes en diferentes categorías.</td>
+</tr>
+<tr>
+<td>f_hacerGrandioso()/f_hacer_grandioso()</td>
+<td>function</td>
+<td>Agrega el prefijo &quot;El gran&quot; a los nombres de los magos.</td>
+</tr>
+<tr>
+<td>f_imprimirNombres()/f_imprimir_nombres()</td>
+<td>function</td>
+<td>Imprime los nombres de una lista.</td>
+</tr>
+<tr>
+<td>f_imprimirTodos()/f_imprimir_todos()</td>
+<td>function</td>
+<td>Imprime todos los personajes con su clasificación.</td>
+</tr>
+<tr>
+<td>f_imprimirMagos()/f_imprimir_magos()</td>
+<td>function</td>
+<td>Imprime solo los nombres de los magos.</td>
+</tr>
+<tr>
+<td>f_imprimirGrandiosos()/f_imprimir_grandiosos()</td>
+<td>function</td>
+<td>Imprime los nombres de los magos con el prefijo.</td>
+</tr>
+<tr>
+<td>f_imprimirFinal()/f_imprimir_lista_final()</td>
+<td>function</td>
+<td>Imprime todos los personajes después de agregar el prefijo.</td>
+</tr>
+<tr>
+<td>f_menu()</td>
+<td>function</td>
+<td>Muestra el menú</td>
+</tr>
+</tbody></table>
+<p>Nota: En la versión 3.1, se cambió la notación de las funciones, coherente con &quot;snake_case&quot; Python.</p>
+<p><strong>Explicación de las columnas:</strong></p>
+<ul>
+<li>  <strong>Elemento:</strong> Nombre de la variable o función.</li>
+<li>  <strong>Tipo:</strong> Tipo de dato (str, int, float, list, dict, function, etc.).</li>
+<li>  <strong>Descripción:</strong> Qué hace o almacena el objeto.</li>
+</ul>
+<p><strong>Consideraciones adicionales:</strong>
+    Guía de estilos y nomenclatura:</p>
+<pre><code>  1) Para una mejor identificación, se han agregado prefijos a los objetos:
+  
+      f_   : Para funciones
+      lst_ : Para listas
+      v_   : Para variables
+      dict_: Para diccionarios
+      
+  2) Notación: Además del prefijo, todos los nombres de objetos, inician con la primera 
+               palabra en minúscula y la segunda con la primera letra en mayúscula, 
+               ejemplo: &quot;unEjemplo&quot;
+               
+  3) Se trata de mantener coherencia con PEP8      
+</code></pre>
+<p>Author             : Jota Cordova (<a href="mailto:&#x6a;&#x6f;&#x74;&#x61;&#x63;&#111;&#x72;&#x64;&#111;&#x76;&#x61;&#106;&#x2e;&#105;&#x6f;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#x6a;&#x6f;&#x74;&#x61;&#x63;&#111;&#x72;&#x64;&#111;&#x76;&#x61;&#106;&#x2e;&#105;&#x6f;&#64;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a>)</p>
+<p>Fecha de creación  : 16/08/2024</p>
+<p>Última modificación: 21/08/2024</p>
+<p>Versión            : 3.0.0</p>
+<p><strong>Historial de versiones</strong></p>
+<pre><code>1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario se encuentra embebido
+                    viene en el código y muestra todo sin control, cumple el objetivo básico.
+                    
+2.0.0 (18/08/2024): Agrega menú y algunas interacciones.
+
+2.0.1 (19/08/2024): Corrige opciones del menú.
+
+3.0.0 (30/08/2024): Agrega ingesta de datos desde un archivo CSV externo.
+
+3.1.0 (26/08/2024): Agrega una versión con más opciones y lectura desde archivo TXT.
+</code></pre>
+<p><strong>Próximo release:</strong>    </p>
+<pre><code>4.0.0 (30/08/2024): Agregar un nuevo personaje modificando el archivo de texto.
+</code></pre>
+
+		</body>

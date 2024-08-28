@@ -20,38 +20,38 @@ Para la realización del ejercicio, he ofrecido 3 variantes. Dos por consola, un
 * **Dependencias externas:**
   
       1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.
-       
+
 * **Tecnologías:**
-    * Python==3.12.15
-    * Tabulate==0.9.0  
+  * Python==3.12.15
+  * Tabulate==0.9.0  
 * **Estructura del código:**
-    * Cada función incluye docstrings, con indicación de:
-      
+  * Cada función incluye docstrings, con indicación de:
+
       a) Su Propósito o qué hace.
-      
+
       b) Parámetros que recibe.
 
       c) Lo qué retorna.
-    
+
 ### Detalles técnicos
 
-* **Estructura de datos:** Diccionario para almacenar personajes.
+* **Estructura de datos:** Archivos externos para almacenar, diccionarios y listas para manipular personajes.
 * **Algoritmos:** Clasificación ordenamiento y búsqueda de valores utilizando los métodos de la clase diccionario y listas.
 * **Librerías:**
-    * **Tabulate:** Para formatear tablas de salida.
-    * **OS:** Para interactuar con el sistema operativo (limpiar pantalla).
+  * **Tabulate:** Para formatear tablas de salida.
+  * **OS:** Para interactuar con el sistema operativo (limpiar pantalla).
 
-### Historial de versiones
+### Historial de versiones para consola
+
 * **1.0.0 (16/08/2024):** Versión inicial.
 * **2.0.0 (18/08/2024):** Agrega menú.
 * **2.0.1 (19/08/2024):** Corrige opciones del menú.
-* **3.0.0 (20/08/2024):** Agrega ingesta de datos desde un archivo externo.
+* **3.0.0 (20/08/2024):** Agrega ingesta de datos desde un archivo externo ".txt".
+* **4.0.0 (27/08/2024):** Agrega más validaciones, opciones de menú y acceso desde un ".csv".
 
-### Código (PENDIENTE)
+### Historial de versiones para web (localhost)
 
-```python
-# Pendiente, agregar código Python en formato MD
-```
+* **1.0.0 (27/08/2024):** Versión inicial.
 
 ### Diccionario de objetos
 
@@ -82,13 +82,13 @@ Nota: En la versión 3.1, se cambió la notación de las funciones, coherente co
 
 **Explicación de las columnas:**
 
--   **Elemento:** Nombre de la variable o función.
--   **Tipo:** Tipo de dato (str, int, float, list, dict, function, etc.).
--   **Descripción:** Qué hace o almacena el objeto.
+* **Elemento:** Nombre de la variable o función.
+* **Tipo:** Tipo de dato (str, int, float, list, dict, function, etc.).
+* **Descripción:** Qué hace o almacena el objeto.
 
 **Consideraciones adicionales:**
     Guía de estilos y nomenclatura:
-    
+
       1) Para una mejor identificación, se han agregado prefijos a los objetos:
       
           f_   : Para funciones
@@ -102,13 +102,13 @@ Nota: En la versión 3.1, se cambió la notación de las funciones, coherente co
                    
       3) Se trata de mantener coherencia con PEP8      
 
-Author             : Jota Cordova (jotacordovaj.io@gmail.com)
+Author             : Jota Cordova (<jotacordovaj.io@gmail.com>)
 
 Fecha de creación  : 16/08/2024
 
-Última modificación: 21/08/2024
+Última modificación: 27/08/2024
 
-Versión            : 3.0.0
+Versión            : 4.0.0
 
 **Historial de versiones**
    
@@ -126,3 +126,7 @@ Versión            : 3.0.0
 **Próximo release:**    
     
     4.0.0 (30/08/2024): Agregar un nuevo personaje modificando el archivo de texto.
+
+### Ejecución
+
+Para las versiones de consola  

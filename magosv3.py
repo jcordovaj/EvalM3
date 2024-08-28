@@ -75,13 +75,14 @@ Fecha de creación  : 16/08/2024
 Última modificación: 20/08/2024 (Autor)
 Versión: 3.0.0
 
-Historial de versiones:
+Historial de versiones para consola:
     1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario viene en el código 
                         y muestra todo sin control. 
     2.0.0 (18/08/2024): Agrega menú.
     2.0.1 (19/08/2024): Corrige opciones del menú
-    3.0.0 (20/08/2024): Agrega ingesta de datos desde un archivo externo.
-
+    3.0.0 (20/08/2024): Agrega ingesta de datos desde un archivo externo txt, 4 opciones de menú.
+    4.0.0 (27/08/2024): Agrega ingesta de datos desde un archivo externo csv, 6 opciones de menú.
+    
 Licencia: Dominio público
 """
 
@@ -116,7 +117,7 @@ def f_leerArchivo(v_nomArchivo):
         next(v_archivo)
         for v_linea in v_archivo:
             v_nombre, v_clasificacion            = v_linea.strip().split(',') # Usando los métodos strip y split, limpiamos las cadena de texto 
-            dict_personajes[v_nombre.strip('"')] = v_clasificacion.strip('"') #  Elimina las comillas dobles
+            dict_personajes[v_nombre.strip('"')] = v_clasificacion.strip('"') #  Elimina las comillas dobles, en otra versión se usaban 
     return dict_personajes
 
 def f_clasificarPersonajes(v_dic):
@@ -166,7 +167,7 @@ def f_imprimirTodos(lst_magos, lst_cientificos, lst_otros):
     """
     Imprime todos los personajes con su clasificación.
     
-    Parámetros: Recibe 3 obsjetos lista
+    Parámetros: Recibe 3 objetos lista
     
     Retorna: Imprime 3 listas por pantalla
     """
@@ -183,7 +184,7 @@ def f_imprimirMagos(v_listaMagos):
     """
     Imprime sólo los nombres de los magos
     
-    Parámetros: Recibe 1 obsjeto lista
+    Parámetros: Recibe 1 objeto lista
     
     Retorna: Imprime 1 lista
     """
@@ -197,7 +198,6 @@ def f_imprimirGrandiosos(v_listaGrandiosos):
     
     Retorna: Imprime 1 lista
     """
-    
     f_imprimirNombres(v_listaGrandiosos)
 
 def f_imprimirFinal(lst_grandiosos, lst_cientificos, lst_otros):
@@ -207,7 +207,6 @@ def f_imprimirFinal(lst_grandiosos, lst_cientificos, lst_otros):
     Parámetros: Recibe 3 listas
     
     Retorna: Imprime las 3 listas por pantalla 
-    
     """
     print("Magos grandiosos:")
     f_imprimirNombres(lst_grandiosos)
@@ -221,7 +220,6 @@ v_nomArchivo                          = "personajes.txt"
 dict_personajes                       = f_leerArchivo(v_nomArchivo)
 lst_magos, lst_cientificos, lst_otros = f_clasificarPersonajes(dict_personajes)
 lst_grandiosos                        = f_hacerGrandioso(lst_magos)
-v_limpiarPantalla                     = True  # Inicializamos un flag para limpiar la pantalla
 
 while True:
     if v_limpiarPantalla:
@@ -235,28 +233,24 @@ while True:
     print("5. Salir")
     opcion = int(input("Ingrese una opción: "))
     if opcion == 1:
-        #print('\033[H\033[J', end='')  # Código de escape "ANSI" para forzar el limpiar la pantalla
         f_limpiarPantalla()
         print("")
         print("La lista completa de personajes es: ")
         print(34*"=")
         f_imprimirTodos(lst_magos, lst_cientificos, lst_otros)
     elif opcion == 2:
-        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("La lista de magos sin modificar es: ")
         print(34*"=")
         f_imprimirMagos(lst_magos)
     elif opcion == 3:
-        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("La lista de magos modificada es: ")
         print(31*"=")
         f_imprimirGrandiosos(lst_grandiosos)
     elif opcion == 4:
-        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("Los personajes agrupados por clasificación son: ")
@@ -265,14 +259,12 @@ while True:
     elif opcion == 5:
         break
     else:
-        #print('\033[H\033[J', end='')
         f_limpiarPantalla()
         print("")
         print("Opción inválida")
     
     v_cont = input("¿Desea continuar? (s/n): ")
     if (v_cont.lower() == 's'):
-        #print('\033[H\033[J', end='')  
-        v_limpiarPantalla = True       #v_cont.lower() == 's'  # Actualiza el flag
+        v_limpiarPantalla = True
     else:
         v_limpiarPantalla = False

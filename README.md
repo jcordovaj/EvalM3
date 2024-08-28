@@ -5,6 +5,8 @@
 
 ### Descripción del proyecto
 
+Para la realización del ejercicio, he ofrecido 3 variantes. Dos por consola, una lee un archivo externo ".txt" con los personajes y genera un menú con las 4 opciones básicas del requerimiento; la otra, lee el archivo externo en formato ".csv" y agrega más opciones al menú, como listado de sólo "científicos" u "otros". Finalmente, me animé a hacer una versión web, con una página que muestra un menú y renderiza la consulta en una tabla, también ofrece links para acceder al readme, un video de demostración, y al repositorio del proyecto en Github.
+
 * **Objetivo:** Clasificar y manipular una lista de personajes.
 * **Funcionalidades:**
     1) Lee un archivo externo en formato txt.
@@ -14,7 +16,7 @@
     5) Genera lista con todos los personajes antes de ser modificados.
     6) Genera la lista de los "Magos" modificada con el prefijo "El gran mago"
     7) Genera lista con todos los personajes, incluyendo los modificados con su prefijo
-    8) (Pendiente próxima versión) Agrega un nuevo personaje al archivo txt, en formato clave:valor (nombre:clasificación)
+    8) (Pendiente para una futura versión) Agregar un nuevo personaje al archivo externo, en formato clave:valor (nombre:clasificación)
 * **Dependencias externas:**
   
       1) Archivo externo: "personajes.txt", permite escalabilidad al proyecto.

@@ -27,6 +27,7 @@ Descripción:
        Diccionario de objetos
         Elemento	                Tipo        	Descripción
         ************************************************************************************************************
+       
         Variables		
         *********
         v_nomArchivo	            str	        Nombre del archivo de texto a leer.
@@ -37,6 +38,7 @@ Descripción:
         lst_grandiosos	            list    	Lista de nombres de magos con el prefijo "El gran".
         v_limpiarPantalla	        bool    	Flag para controlar si se limpia la pantalla.
         v_cont	                    str	        Variable para almacenar la respuesta del usuario si desea continuar.
+        
         Funciones		
         *********
         f_limpiar_pantalla()     	function	Limpia la pantalla de la consola.
@@ -48,6 +50,7 @@ Descripción:
         f_imprimir_magos()	        function	Imprime solo los nombres de los magos.
         f_imprimir_grandiosos()	    function	Imprime los nombres de los magos con el prefijo.
         f_imprimir_lista_final()   	function	Imprime todos los personajes después de agregar el prefijo.
+        f_menu()                   	function	Genera menu.
 
         Explicación de las columnas:
 
@@ -72,8 +75,8 @@ Descripción:
             c) Qué retorna.
 Autor              : Jota Cordova (jotacordovaj.io@gmail.com)
 Fecha de creación  : 16/08/2024
-Última modificación: 20/08/2024 (Autor)
-Versión: 3.0.0
+Última modificación: 26/08/2024 (Autor)
+Versión: 4.0.0
 
 Historial de versiones:
     1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario viene en el código 
@@ -81,7 +84,11 @@ Historial de versiones:
     2.0.0 (18/08/2024): Agrega menú.
     2.0.1 (19/08/2024): Corrige opciones del menú
     3.0.0 (20/08/2024): Agrega ingesta de datos desde un archivo externo CSV.
-    3.1.0 (26/08/2024): Agrega ingesta de datos desde un archivo externo TXT y más opciones al menu, cambia notación funciones.
+    4.0.0 (26/08/2024): Agrega más opciones al menú, otras mejoras usando OS, cambia notación funciones.
+    
+Mejoras programadas:    
+
+    * Agregar interactivamente un nuevo personaje al archivo externo (csv o txt).
 
 Licencia: Dominio público
 """
@@ -222,6 +229,24 @@ lst_magos, lst_cientificos, lst_otros = f_clasificar_personajes(dict_personajes)
 lst_grandiosos                        = f_hacer_grandioso(lst_magos)
     
 def f_menu():
+    """
+    Presenta un menú interactivo al usuario para mostrar listas de personajes.
+
+    Permite al usuario seleccionar entre las siguientes opciones:
+    - opc 1= Imprime el listado original de personajes.
+    - opc 2= Imprime sólo los magos sin prefijo.
+    - opc 3= Imprime sólo los magos con prefijo 'El gran mago'.
+    - opc 4= Imprime la lista de científicos.
+    - opc 5= Imprime la lista de otros personajes.
+    - opc 6= Imprime la lista completa modificada.
+    - opc 7= Sale del programa.
+
+    El menú se repite hasta que el usuario elige la opción de salir.
+
+    Parámetros: No recibe parámetros (None)
+
+    Retorna: Ejecuta la acción seleccionada y despliega el resultado
+    """
     while True:
         f_limpiar_pantalla()
         print("Menú:")

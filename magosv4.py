@@ -78,17 +78,21 @@ Fecha de creación  : 16/08/2024
 Última modificación: 26/08/2024 (Autor)
 Versión: 4.0.0
 
-Historial de versiones:
+Historial de versiones para consola:
     1.0.0 (16/08/2024): Versión inicial. Corre el programa, el diccionario viene en el código 
                         y muestra todo sin control. 
     2.0.0 (18/08/2024): Agrega menú.
     2.0.1 (19/08/2024): Corrige opciones del menú
     3.0.0 (20/08/2024): Agrega ingesta de datos desde un archivo externo CSV.
     4.0.0 (26/08/2024): Agrega más opciones al menú, otras mejoras usando OS, cambia notación funciones.
+
+Historial de versiones para web:
+    1.0.0 (22/08/2024): Versión inicial. Configuraciones y resolver problemas de seguridad. 
+    1.0.1 (29/08/2024): Se corrigen algunos problemas menores, se habilita readme.html, readme.pdf, actualiza y realizan pruebas. 
     
 Mejoras programadas:    
 
-    * Agregar interactivamente un nuevo personaje al archivo externo (csv o txt).
+    * Agregar interactivamente un nuevo personaje al archivo externo (csv, txt o base de datos).
 
 Licencia: Dominio público
 """

@@ -91,7 +91,7 @@ Licencia: Dominio público
 import tabulate
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 def f_leerArchivo(v_nomArchivo):
     """

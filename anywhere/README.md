@@ -179,6 +179,6 @@ Finalmente, basta con hacer clic sobre la dirección del local host o, digitarlo
 * Si este repositorio te ha sido útil, por favor, considera clonarlo con el siguiente comando:
 
   '''bash
-  git clone https://github.com/tu_usuario/evalM3.git\`
+  [git clone https://github.com/jcordovaj/evalM3.git](https://github.com/jcordovaj/EvalM3.git)
   '''
 * Si quieres mostrarme tu apoyo, dame una estrella ⭐ aquí: [Dar estrella](https://github.com/jcordovaj/evalM3/star)

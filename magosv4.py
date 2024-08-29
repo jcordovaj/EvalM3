@@ -75,7 +75,7 @@ Descripción:
             c) Qué retorna.
 Autor              : Jota Cordova (jotacordovaj.io@gmail.com)
 Fecha de creación  : 16/08/2024
-Última modificación: 26/08/2024 (Autor)
+Última modificación: 29/08/2024 (Autor)
 Versión: 4.0.0
 
 Historial de versiones para consola:
